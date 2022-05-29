@@ -1,15 +1,30 @@
 # EyeTrackVIS
+
 Automatic Control Theory@PKU 2022 Spring, Eye Tracking, Visualization, Machine Learning
 by hq
 
-collect data:
-```python collect_data.py
-images will be saved in ``"image/" directory
+**collect data:**
 
-train model:
-```python train.py
-note that you should set your screen size by ``height and ``width before training
-model will be saved as ``"eye_track_model"
+```shell
+python collect_data.py
+```
 
-test model:
-```python prediction.py
+Images will be saved in the `"image/"` directory.
+
+**train model:**
+
+```shell
+python train.py
+```
+
+Note that you should set your screen size by `height` and `width` before training.
+The model will be saved as `"eye_track_model"`.
+
+**test model:**
+
+```shell
+python prediction.py
+```
+
+It will load the model, and you can move the mouse with your eyes live.
+
