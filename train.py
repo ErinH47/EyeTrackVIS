@@ -1,7 +1,7 @@
 import numpy as np
 import os
 import cv2
-import pyautogui
+from tqdm import tqdm
 from tensorflow.keras.models import *
 from tensorflow.keras.layers import *
 from tensorflow.keras.optimizers import *
@@ -31,7 +31,7 @@ model.compile(optimizer = "adam", loss = "mean_squared_error")
 model.summary()
 
 epochs = 200
-for epoch in range(epochs):
+for epoch in tqdm(range(epochs)):
   model.fit(X, Y, batch_size = 32)
   
 model.save("eye_track_model")
