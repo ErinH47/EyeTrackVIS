@@ -6,7 +6,8 @@ from tensorflow.keras.models import *
 from tensorflow.keras.layers import *
 from tensorflow.keras.optimizers import *
 
-width, height = 2560, 1600
+width, height = 2560, 1440
+# width, height = 1920, 1080
 root = "image/"
 
 filepaths = os.listdir(root)
