@@ -32,8 +32,7 @@ def scan(image_size=(32, 32)):
   else:
     return None
 
-width, height = 2559, 1439
-# width, height = 1920, 1080
+width, height = pyautogui.size()
 model = keras.models.load_model("eye_track_model")
 
 
